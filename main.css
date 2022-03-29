@@ -1,0 +1,169 @@
+html,
+body {
+  min-height: 100%;
+  height: 100%;
+  font-family: 'Garamond', serif;
+}
+
+/* Site colours */
+.navbar {
+  background-color: #f2f2f2;
+}
+
+.company-name,
+.navbar-light .navbar-brand {
+  color: #1f487c;
+  padding: 15px;
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #000;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav .nav-link {
+    font-size: 0.8125rem;
+    padding-right: 30px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-nav .nav-link {
+    font-size: 1rem;
+  }
+}
+
+/* fonts */
+.navbar-brand, 
+.company-name {
+  font-family: 'Garamond', serif;
+  font-weight: bold;
+}
+.nav-link,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Garamond', serif;
+}
+
+
+#modal-disclaimer h1,
+#modal-disclaimer h2,
+#modal-disclaimer h3,
+#modal-disclaimer h4,
+#modal-disclaimer h5,
+#modal-disclaimer h6{
+  font-family: 'Garamond', serif;
+}
+
+h1 {
+  color: #000;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+/* Site content */
+.content-box {
+  background-color:white;
+  margin-bottom: 1rem;
+  margin-bottom: 70px;
+}
+
+@media (min-width: 768px) {
+  .content-box {
+    margin-bottom: 45px;
+  }
+}
+
+
+.content-box a {
+  color: #000;
+}
+
+/* Footer */
+footer {
+  font-size: 0.75rem;
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f2f2f2;
+}
+
+footer a {
+  color:#212529;
+}
+
+@media (min-width: 300px) {
+  footer {
+    position: relative;
+  }
+}
+
+@media (min-width: 600px) {
+  footer {
+    position: fixed;
+  }
+}
+
+/* Modal */
+@media (min-width: 768px) {
+  .modal-dialog {
+    max-width: 80%;
+  }
+}
+
+.modal-content{
+  font-size: 0.7rem;;
+}
+
+.modal-content h2{
+  font-size: 1rem;
+}
+
+/* Buttons */
+.btn-primary {
+  color: #fff;
+  background-color: #1f487c;
+  border-color: #1f487c;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #254061;
+  border-color: #254061;
+}
+
+.btn-primary.focus,
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem #50151a;
+}
+
+/* Helpers */
+.min-h-100 {
+  min-height: 100%;
+}
+
+.flex-auto {
+  flex: auto;
+}
+
+/* IE Hacks */
+@media all and (-ms-high-contrast: none) {
+  *::-ms-backdrop,
+  .content-box {
+    margin-top: 60px;
+  } /* IE11 */
+  *::-ms-backdrop,
+  .home .content-box {
+    margin-top: 180px;
+  } /* IE11 */
+}
+
